@@ -1,0 +1,6 @@
+RewardName=
+DeleteAfterSelection=True
+DecelSpeed=100
+WheelTickVolume=0.5
+StartSpeed=1000
+Framerate=30
