@@ -1,0 +1,8 @@
+2 (number of items that should be pulled from this file to make a loadout, leave empty if it should only pick 1 per secction)
+item 1
+item 2
+item 3
+~ (Indicates a new section)
+item 4
+item 5
+item 6

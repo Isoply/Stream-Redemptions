@@ -1,0 +1,8 @@
+(Example of leaving number empty, will select 1 from each section.)
+item 1
+item 2
+item 3
+~ (Indicates a new section)
+item 4
+item 5
+item 6
