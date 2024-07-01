@@ -14,6 +14,7 @@
             background-color: dimgray;
             color: white;
             width: 100%;
+            left: 0;
             padding: 1em;
         }
     </style>
@@ -23,6 +24,13 @@
             color: white;
             width: 100%;
             left: 0;
+            padding: 1em;
+        }
+    </style>
+    <style>
+        #CodeSnippet {
+            background-color: black;
+            color: lightgray;
             padding: 1em;
         }
     </style>
@@ -65,6 +73,8 @@
         <p style="font-size: 30px;">Every section has an invisible button in the top right to open the settings.
         <br>They also all have a button to swap to another app and a button to login to Twitch (that dissapears when logged in) and a button to open the folder of the specified section.</p>
     </section>
+
+
     <section id="SectionA">
         <h1 style="font-size: 45px; text-align: center; justify-content: center">Wheel Documentation</h1>
         <p style="font-size: 30px;">
@@ -88,23 +98,91 @@
             -Displays all the segments currently on your wheel. You can also add your own if you'd like.<br>
             View Color Options<br>&emsp;
             -Displays all the colors of each segment. Change to your hearts content.
-        <p style="font-size: 30px;">
+        <p style="font-size: 25px;">
             <br><img src="wheel options.JPG" ; alt="A display of how the wheel is roughly supposed to look like with segments." width="384" height="216"><br>
             You can start spinning the wheel by pressing the button on the wheel when you have segments on your wheel.<br>
             The images of the wheel can be changed by going into the folder and going to ".../Wheel/Images/" and in this folder add images called<br>
             "Button.png", "Pointer.png" and "Wheel.png"<br>
             <img src="wheel custom.JPG" ; alt="A display of where to place your custom images."><br>
             You can also find all your saved setting in the ".../Wheel/" folder in "Save.save",the segments in "WheelSegments.save" and segment colors in "WheelColors.save".<br>
-            If any of these do not exist, then that means you have not changed/added anything for it in the app.
+            If any of these do not exist, then that means you have not changed/added anything for it in the app.<br>
+            <img src="wheel custom 2.JPG" ; alt="A display of where your saved data goes..">
         </p>
     </section>
+
+
     <section id="SectionB">
-        <h1 style="font-size: 45px; text-align: center; justify-content: center">Loadout Documentation</h1>
-        <p style="font-size: 30px;">This is where all the documentation for the loadouts will be stated.</p>
+        <h1 style="font-size: 45px; text-align: center; justify-content: center">Random Loadout Documentation</h1>
+        <p style="font-size: 30px;">
+            When in the Random Loadout section, these are all your options:<br>
+        <p style="font-size: 20px">
+            Framerate<br>&emsp;
+            -The framerate at which this section runs.<br>
+            Reward Name<br>&emsp;
+            -The reward name your viewers can redeem to randomize your loadout. (Case sensitive).<br>
+            Loadout Dropdown<br>&emsp;
+            -This is a dropdown that displays all the text files that you have in your folder.<br>
+            Get Random Loadout<br>&emsp;
+            -Gives you a random loadout of the currently selected Loadout file.<br>
+            No Dupes<br>&emsp;
+            -If selected, makes sure no item shows up twice.<br>
+            Enable Queue<br>&emsp;
+            -If enables, the first redeem will randomize your loadout, any future ones will pile up in a queue on the bottom right and can be clicked to use 1.<br>
+            Clear Queue<br>&emsp;
+            -Clears the current queue.
+        <p style="font-size: 25px;">
+            <br><img src="loadout options.JPG" ; alt="A display of how the loadout is roughly supposed to look like." width="384" height="216"><br>
+            On the bottom right, where the queue also appears, there is always an invisible button to randomize your loadout.<br>
+            All your loadouts get taken out of the folders, which are in ".../Loadout/Loadouts/".<br>
+            <img src="loadout custom.JPG" ; alt="A display of where your text files go."><br>
+            When you open loadouts for the first time, it will automatically make an example file for class based loadouts and regular loadouts.<br>
+            Just name the file you're making to whatever you'd like, be it game or something else.<br>
+            Any file for loadouts can follow this formatting:
+            <section id="CodeSnippet">
+                [Number of items to be pulled from this file]<br>
+                item 1<br>
+                item 2<br>
+                item 3<br>
+                ~ (This is an indicator of a new section, you can also add a number behind it if you want to take a different number from this secction than stated at the top.)<br>
+                item 4<br>
+                item 5<br>
+                item 6<br>
+            </section><br>
+            <img src="loadout custom 2.JPG" ; alt="A display how a loadout file looks in the folder."><br>
+<p style="font-size: 25px;">
+            Anything incased in [] is something that should be replaced with what is stated inside.<br><br>
+            For anything class based, you want to create a folder named after the game or something else.<br>
+            Then inside you want to create text files for each class/individual loadout following the same previous formatting.<br>
+            <img src="loadout custom 3.JPG" ; alt="A display how a loadout file looks in the folder for classes."><br><br>
+            Any save data is saved in the original loadout folder under ".../Loadout/Save.save".
+        </p>
     </section>
+
+
     <section id="SectionA">
         <h1 style="font-size: 45px; text-align: center; justify-content: center">Marbles Documentation</h1>
-        <p style="font-size: 30px;">This is where all the documentation for the marbles will be stated.</p>
+        <p style="font-size: 30px;">
+            When in the Marbles section, these are all your options:<br>
+        <p style="font-size: 20px">
+            Framerate<br>&emsp;
+            -The framerate at which this section runs.<br>
+            Reward Name<br>&emsp;
+            -The reward name your viewers can redeem to add to the wheel (Case sensitive).<br>
+            Wheel Start Speed<br>&emsp;
+            -The speed at which the wheel start to spin.<br>
+            Wheel Deceleration Speed<br>&emsp;
+            -The speed at which the wheel decelerates when spinning.<br>
+            Tick Volume<br>&emsp;
+            -How loud the ticks sound when a wheel section passes.<br>
+            Test Wheel Segments<br>&emsp;
+            -How many segments the wheel has (for testing purposes). Does get rid of any existing segments!<br>
+            Delete After Selection<br>&emsp;
+            -Deletes segments when they get selected by the wheel if selected.<br>
+            View Segments<br>&emsp;
+            -Displays all the segments currently on your wheel. You can also add your own if you'd like.<br>
+            View Color Options<br>&emsp;
+            -Displays all the colors of each segment. Change to your hearts content.
+        </p>
     </section>
 </body>
 </html>
